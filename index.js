@@ -4,9 +4,11 @@ function takeANumber(currentLine, newPerson) {
 }
 
 
-function takeANumber(currentLine, number) {
-  currentLine.push(number);
-  return(`Welcome, you are number ${currentLine.length} in line.`);
+var number = 0;
+
+function takeANumber(currentLine) {
+  currentLine.push(++number);
+  return(`Welcome, you are number ${number} in line.`);
 }
 
 
