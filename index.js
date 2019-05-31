@@ -4,6 +4,11 @@ function takeANumber(currentLine, newPerson) {
 }
 
 
+function takeANumber(currentLine, number) {
+  currentLine.push(number);
+  return(`Welcome, you are number ${currentLine.length} in line.`);
+}
+
 
 function nowServing(katzDeliLine) {
    if (katzDeliLine.length > 0) {
